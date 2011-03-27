@@ -12,6 +12,7 @@ public class PrimeTest {
 		assertEquals(list(), PrimeNumbers.generatePrimes(1));
 	}
 	
+	@Test
 	public void testTwo() {
 		assertEquals(list(2), PrimeNumbers.generatePrimes(2));
 	}
