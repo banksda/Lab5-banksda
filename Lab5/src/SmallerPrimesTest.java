@@ -11,6 +11,11 @@ public class SmallerPrimesTest {
 		assertEquals(list(), PrimeNumbers.determineSmallerPrimes(2));
 	}
 	
+	@Test
+	public void testThree() {
+		assertEquals(list(2), PrimeNumbers.determineSmallerPrimes(3));
+	}
+	
 	public ArrayList<Integer> list(int... values) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 	
