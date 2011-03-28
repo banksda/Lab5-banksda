@@ -18,7 +18,7 @@ public class SmallerPrimesTest {
 	
 	@Test
 	public void testFour() {
-		assertEquals(list(2), PrimeNumbers.determineSmallerPrimes(4));
+		assertEquals(list(2, 3), PrimeNumbers.determineSmallerPrimes(4));
 	}
 	
 	@Test
