@@ -12,11 +12,18 @@ public class PrimeNumbers {
 				n /= value;
 			}
 		}
-		
+	
 		return list;
 	}
 	
 	public static ArrayList<Integer> determineSmallerPrimes(int value) {
-		return null;
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		
+		if (value < 3)
+			return list;
+		else if(value == 3)
+			list.add(2);
+				
+		return list;
 	}
 }
