@@ -6,15 +6,12 @@ public class PrimeNumbers {
 	public static ArrayList<Integer> generatePrimes(int n) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		
-		if(n % 3 == 0) {
-			list.addAll(generatePrimes(n/3));
-			list.add(3);
+		for(int value = 2; n > 1; value++) {
+			while(n % value == 0) {
+				list.add(value);
+				n /= value;
+			}
 		}
-		else if (n % 2 == 0) {
-			list.addAll(generatePrimes(n/2));
-			list.add(2);
-		}
-		
 		
 		return list;
 	}
