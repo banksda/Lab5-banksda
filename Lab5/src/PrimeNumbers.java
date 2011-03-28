@@ -15,4 +15,8 @@ public class PrimeNumbers {
 		
 		return list;
 	}
+	
+	public static ArrayList<Integer> determineSmallerPrimes(int value) {
+		return null;
+	}
 }
